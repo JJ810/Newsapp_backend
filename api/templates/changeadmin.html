@@ -1,0 +1,26 @@
+{% extends 'admin/change_list.html' %}
+<!--{% block title %}Log in{% endblock %}-->
+
+{% block object-tools %}
+
+<!--<form method="post">-->
+<!--{% csrf_token %}-->
+<!--<input name="search data" class="vTextField">-->
+<!--<button class="btn btn-success" type="submit">search</button>-->
+<!--</form>-->
+<div align="center">
+  <form method="post" action="/api/export_all_posts/">
+    {% csrf_token %}
+    <h2>Export All Posts</h2>
+    <input type="submit" value="Export All Posts"/>
+  </form>
+  <form method="post" action="/api/export_all_posts/">
+    {% csrf_token %}
+    <h2>Export Saved Posts</h2>
+    <input style="width: 20%" type="email" required="True" name="email" placeholder="email of user"/>
+    <br/>
+    <input type="submit" value="Export Saved Post"/>
+  </form>
+</div>
+
+{% endblock %}
