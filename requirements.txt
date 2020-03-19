@@ -6,7 +6,7 @@ bs4==0.0.1
 lxml==4.2.5
 urllib3==1.24
 wrapt==1.10.11
-Django==2.1.4
+Django==2.2.10
 Jinja2==2.10
 MarkupSafe==1.1.0
 PyPDF2==1.26.0
